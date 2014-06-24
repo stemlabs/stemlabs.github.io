@@ -25,6 +25,14 @@ h1 {
 
 }
 
+h1::selection, .labs {
+	background: #DDD; /* Safari */
+}
+
+::-moz-selection {
+	background: #DDD; /* Firefox */
+}
+
 .space {
 	letter-spacing: -1.7rem;
 }
