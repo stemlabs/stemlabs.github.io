@@ -42,8 +42,22 @@ h1::selection, .labs {
 	height:12rem;
 }
 
-path {
-	fill:#333;
+.leaf path {
+  stroke:#333;
+  fill:rgba(0,0,0,0);
+}
+
+.leaf path.fillable {
+
+  -webkit-transition: fill 0.5s ease-in-out;
+  -moz-transition: fill 0.5s ease-in-out;
+  -ms-transition: fill 0.5s ease-in-out;
+  -o-transition: fill 0.5s ease-in-out;
+  transition: fill 0.5s ease-in-out;
+}
+
+.leaf:hover path.fillable {
+  fill:#296;
 }
 
 footer {
