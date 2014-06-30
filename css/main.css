@@ -26,11 +26,21 @@ h1 {
 }
 
 h1::selection, .labs {
-	background: #DDD; /* Safari */
+	background-color: #DDD; /* Safari */
 }
 
-::-moz-selection {
-	background: #DDD; /* Firefox */
+h1::-moz-selection {
+	background-color: #DDD; /* Firefox */
+}
+
+footer::selection {
+	background-color:#259;
+	color:#FFF;
+}
+
+footer::-moz-selection {
+	background-color:#259;
+	color:#FFF;
 }
 
 .space {
